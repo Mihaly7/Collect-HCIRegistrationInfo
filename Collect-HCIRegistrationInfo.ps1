@@ -76,7 +76,7 @@ foreach ($node in $nodes)
     
         #Update modules
         Write-Host "Update Modules" -NoNewLine   
-        If (Get-InstalledModule Az.StackHCI) {Update-Module -Confirm:$False -ErrorAction SilentlyContinue} Else {Install-Module Az.StackHCI -Confirm:$False -ErrorAction SilentlyContinue}
+        If (Get-InstalledModule Az.StackHCI) {Update-Module -Confirm:$False -ErrorAction SilentlyContinue} Else {Install-Module Az.StackHCI -AllowClobber -Confirm:$False -ErrorAction SilentlyContinue}
         If (Get-InstalledModule Az.Accounts) {Update-Module -Confirm:$False -ErrorAction SilentlyContinue} Else {Install-Module Az.Accounts -Confirm:$False -ErrorAction SilentlyContinue}
         If (Get-InstalledModule Az.Resources) {Update-Module -Confirm:$False -ErrorAction SilentlyContinue} Else {Install-Module Az.Resources -Confirm:$False -ErrorAction SilentlyContinue}
         Write-host " - " -NoNewLine; Write-Host "OK" -ForegroundColor Green
