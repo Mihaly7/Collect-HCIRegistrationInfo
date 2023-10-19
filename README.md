@@ -5,9 +5,13 @@ Collect Azure Stack HCI registration related logs and data
  This script update/install Az.StackHCI, Az.Resources, Az.Account modules.                                                          
  Installs the AzStackHci.EnvironmentChecker module then collect Cluster registration and Arc agent related data.                    
 
-
-
-      
+**Usage**
+1. Download the ps1 file to your env 
+2. Dot source it:
+   <#. .\Collect-HCIRegistrationInfo#>
+3. Run the function to collect data
+   <#Collect-HciRegistrationInfo#>
+   
       <#
         .SYNOPSIS
         Collect Azure Stack HCI registration related logs and Azure Arc setup related logs.
