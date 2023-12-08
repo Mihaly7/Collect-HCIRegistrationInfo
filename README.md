@@ -7,9 +7,9 @@ Collect Azure Stack HCI registration related logs and data
 
 **Usage**
 1. Download the ps1 file to your env 
-2. Dot source it:
+2. Dot source it to import the function:
    
-   . .\Collect-HCIRegistrationInfo
+   C:\Temp\>. .\Collect-HCIRegistrationInfo
    
 4. Run the function to collect data
    
